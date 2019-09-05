@@ -1,24 +1,42 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
+import FlowContainer from "@/views/flow-container";
+import Initialization from "@/views/initialization";
+import DownloadVideo from "@/views/download-video";
+import EditVideo from "@/views/edit-video";
+import SavingVideo from "@/views/saving-video";
 
 Vue.use(Router);
+
+export const videoArr = [
+  {
+    path: "/",
+    name: "Download",
+    component: DownloadVideo
+  },
+  {
+    path: "/edit",
+    name: "edit",
+    component: EditVideo
+  },
+  {
+    path: "/saving",
+    name: "saving",
+    component: SavingVideo
+  }
+];
 
 export default new Router({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: Home
+      name: "initialization",
+      component: Initialization
     },
     {
-      path: "/about",
-      name: "about",
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ "./views/About.vue")
+      path: "/flow",
+      component: FlowContainer,
+      children: videoArr
     }
   ]
 });

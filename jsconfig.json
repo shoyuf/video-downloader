@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    // "target": "es2017",
+    // "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      // "@actions/*": [
+      //   "src/actions/*"
+      // ],
+      // "@@/*": [
+      //   "./*"
+      // ],
+      // "~~/*": [
+      //   "./*"
+      // ],
+      "@/*": [
+        "src/*"
+      ],
+      // "~/*": [
+      //   "src/*"
+      // ],
+      // "assets/*": [
+      //   "src/assets/*"
+      // ],
+      // "static/*": [
+      //   "src/static/*"
+      // ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  // "include": ["src"]
+}
