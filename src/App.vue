@@ -3,8 +3,8 @@
     <a-spin :spinning="loading" tip="加载中">
       <router-view />
     </a-spin>
-    <a-switch v-model="loading">toggle</a-switch>
-    <a-button @click="$router.go()">router-go</a-button>
+    <!-- <a-switch v-model="loading">toggle</a-switch> -->
+    <!-- <a-button @click="$router.go()">router-go</a-button> -->
   </div>
 </template>
 <script>

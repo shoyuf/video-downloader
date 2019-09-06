@@ -15,6 +15,7 @@
     <a-button @click="nextStep" :disabled="current === VIDEO_PATHS.length - 1"
       >下一步</a-button
     >
+    {{ current }}
   </div>
 </template>
 
@@ -29,7 +30,7 @@ export default {
   },
   watch: {
     $route(route) {
-      this.current = VIDEO_PATHS.findIndex(({ path }) => path === route.path);
+      this.current = VIDEO_PATHS.findIndex(({ name }) => name === route.name);
     }
   },
   methods: {

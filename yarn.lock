@@ -703,6 +703,13 @@
     ajv "^6.1.0"
     ajv-keywords "^3.1.0"
 
+"@femessage/log-viewer@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@femessage/log-viewer/-/log-viewer-1.0.0.tgz#512cbae494352c7e38b00f7a0b6675e124609d75"
+  integrity sha512-q1pFLRM1Sju5G4hvs66OosaRR01tqTeuDEPIK+RDuMI1fuqLPWQb7S7luxZR2BsraPAaVWgj3K5krVQhz5Zexw==
+  dependencies:
+    vue-virtual-scroll-list "^1.4.1"
+
 "@hapi/address@2.x.x":
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.0.0.tgz#9f05469c88cb2fd3dcd624776b54ee95c312126a"
@@ -9815,6 +9822,11 @@ vue-template-es2015-compiler@^1.9.0:
   version "1.9.1"
   resolved "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz#1ee3bc9a16ecbf5118be334bb15f9c46f82f5825"
   integrity sha1-HuO8mhbsv1EYvjNLsV+cRvgvWCU=
+
+vue-virtual-scroll-list@^1.4.1:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/vue-virtual-scroll-list/-/vue-virtual-scroll-list-1.4.2.tgz#c9308029a10587cb25480ed1b41798636b35f296"
+  integrity sha512-jcXl1cYDxGZX+aF9vsUauXWnUkXm8oQxnvLTJ8UMTmMxwzbmlHX7vs0xGDdEej91vJpBNrdNNseWPxboTvI+UA==
 
 vue@^2.6.10:
   version "2.6.10"
